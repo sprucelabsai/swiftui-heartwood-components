@@ -21,6 +21,7 @@
 		DF37EAE4230E02D800840836 /* HWIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF37EAE3230E02D800840836 /* HWIcon.swift */; };
 		DF37EAE6230E13D700840836 /* HWAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF37EAE5230E13D700840836 /* HWAvatar.swift */; };
 		DF37EAE8230E14B900840836 /* HWOnlineStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF37EAE7230E14B900840836 /* HWOnlineStatus.swift */; };
+		DF96466D230EFCB800CEE359 /* HWStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF96466C230EFCB800CEE359 /* HWStyles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		DF37EAE3230E02D800840836 /* HWIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWIcon.swift; sourceTree = "<group>"; };
 		DF37EAE5230E13D700840836 /* HWAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWAvatar.swift; sourceTree = "<group>"; };
 		DF37EAE7230E14B900840836 /* HWOnlineStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWOnlineStatus.swift; sourceTree = "<group>"; };
+		DF96466C230EFCB800CEE359 /* HWStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWStyles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		DF24EFC5230DB6E700219B7A /* SwiftUI Heartwood Components */ = {
 			isa = PBXGroup;
 			children = (
+				DF96466B230EFC9200CEE359 /* Helpers */,
 				DF24EFF9230DD09500219B7A /* Models */,
 				DF24EFF6230DB76100219B7A /* Components */,
 				DF24EFC6230DB6E700219B7A /* AppDelegate.swift */,
@@ -168,6 +171,14 @@
 				DF37EAE7230E14B900840836 /* HWOnlineStatus.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DF96466B230EFC9200CEE359 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DF96466C230EFCB800CEE359 /* HWStyles.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +320,7 @@
 				DF37EAE4230E02D800840836 /* HWIcon.swift in Sources */,
 				DF37EAE8230E14B900840836 /* HWOnlineStatus.swift in Sources */,
 				DF24EFCB230DB6E700219B7A /* ContentView.swift in Sources */,
+				DF96466D230EFCB800CEE359 /* HWStyles.swift in Sources */,
 				DF37EAE6230E13D700840836 /* HWAvatar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
