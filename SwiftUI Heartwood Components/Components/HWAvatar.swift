@@ -88,11 +88,15 @@ struct HWAvatar: View {
       if model.isVertical {
         VStack(alignment: .center) {
           ImageStack
-          TextStack
+          if model.name != nil {
+            TextStack
+          }
         }
       } else {
         ImageStack
-        TextStack
+        if model.name != nil {
+          TextStack
+        }
       }
     }
     

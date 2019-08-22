@@ -28,7 +28,7 @@ struct HWIcon: View {
   var body: some View {
 //    Image(uiImage: dynamicImage)
     Image(systemName: "star")
-      .imageScale(.large)
+      .imageScale(.small)
   }
 }
 
