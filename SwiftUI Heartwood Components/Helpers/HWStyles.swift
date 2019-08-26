@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import HeartwoodTokens
 
 // All colors, font sizes and fonts should come from design tokens
 
@@ -38,6 +39,17 @@ enum HWStyles {
     case 16..<24: return .headline
     default: return .title1
     }
+  }
+  
+  static func dynamicColor(_ color: HeartwoodTokens.DynamicColor) -> Color {
+    let dynamicColor = UIColor { (traitCollection: UITraitCollection) -> UIColor in
+      if traitCollection.userInterfaceStyle == .dark {
+        return color.night
+      } else {
+        return color.day
+      }
+    }
+    return Color(dynamicColor)
   }
   
 }

@@ -36,30 +36,46 @@ struct HWAvatar: View {
     guard let status = model.status else {
       return .clear
     }
+    var color: HeartwoodTokens.DynamicColor
     switch status {
-    case .offline: return .gray
-    case .online: return .green
+    case .offline: color = HeartwoodTokens.Color.textColorPlaceholder
+    case .online: color = HeartwoodTokens.Color.textColorCodeGreen
     }
+    return HWStyles.dynamicColor(color)
   }
   
   private var avatarDimension: CGFloat {
-    return model.isLarge
-      ? HWStyles.avatarHeightLarge
-      : HWStyles.avatarHeightMedium
+    let size = model.isLarge
+      ? HeartwoodTokens.ComponentStyle.componentsAvatarSizeLarge
+      : HeartwoodTokens.ComponentStyle.componentsAvatarSizeBase
+    return CGFloat(size)
   }
   
   private var titleFont: Font {
     let name =  HeartwoodTokens.Font.semibold.name
-    let size = HeartwoodTokens.Font.Size.font3
+    let size = model.isLarge
+      ? HeartwoodTokens.Font.Size.font3
+      : HeartwoodTokens.Font.Size.font2
     return HWStyles.dynamicFont(name: name, size: size)
   }
 
   private var subtitleFont: Font {
     let name =  HeartwoodTokens.Font.regular.name
-    let size = HeartwoodTokens.Font.Size.font2
+    let size = model.isLarge
+      ? HeartwoodTokens.Font.Size.font3
+      : HeartwoodTokens.Font.Size.font2
     return HWStyles.dynamicFont(name: name, size: size)
   }
 
+  private var titleColor: Color {
+    let color = HeartwoodTokens.Color.textColorBase
+    return HWStyles.dynamicColor(color)
+  }
+  
+  private var subtitleColor: Color {
+    let color = HeartwoodTokens.Color.textColorSubdued
+    return HWStyles.dynamicColor(color)
+  }
   
   @State var model: Model
   
@@ -91,11 +107,15 @@ struct HWAvatar: View {
     
     let TextStack = VStack(alignment: model.isVertical ? .center : .leading) {
       if model.name != nil {
-        Text(model.name!).font(titleFont)
+        Text(model.name!)
+          .font(titleFont)
+          .foregroundColor(titleColor)
         
       }
       if model.text != nil {
-        Text(model.text!).font(subtitleFont)
+        Text(model.text!)
+          .font(subtitleFont)
+          .foregroundColor(subtitleColor)
       }
     }
     
