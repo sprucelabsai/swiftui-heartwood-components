@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import HeartwoodTokens
 
 public struct HWListItem: View {
   
@@ -23,6 +24,49 @@ public struct HWListItem: View {
     var contextMenuActions: [HWAction]?
   }
   
+  private var titleFont: Font {
+    let name =  HeartwoodTokens.Font.semibold.name
+    let size = HeartwoodTokens.Font.Size.font2
+    return HWStyles.dynamicFont(name: name, size: size)
+  }
+
+  private var subtitleFont: Font {
+    let name =  HeartwoodTokens.Font.regular.name
+    let size = HeartwoodTokens.Font.Size.font2
+    return HWStyles.dynamicFont(name: name, size: size)
+  }
+
+  private var titleColor: Color {
+    let color = HeartwoodTokens.Color.textColorBase
+    return HWStyles.dynamicColor(color)
+  }
+  
+  private var subtitleColor: Color {
+    let color = HeartwoodTokens.Color.textColorSubdued
+    return HWStyles.dynamicColor(color)
+  }
+  
+  private var buttonColor: Color {
+    let color = HeartwoodTokens.Color.colorPrimaryBase
+    return HWStyles.dynamicColor(color)
+  }
+  
+  private var iconColor: Color {
+    let color = HeartwoodTokens.Color.textColorSubdued
+    return HWStyles.dynamicColor(color)
+  }
+  
+  private var selectableIcon: String {
+    guard let selectableType = model.selectableType else { return "" }
+    switch selectableType {
+    case .multiSelectable:
+      return HeartwoodTokens.Icon.fillCheckBoxOutlineBlank //  HeartwoodTokens.Icon.fillCheckBox
+    case .singleSelectable:
+      return HeartwoodTokens.Icon.fillRadioButtonUnchecked
+    }
+    
+  }
+  
   @State var model: Model
   
   @State var toggleIsOn: Bool = false // TODO REMOVE THIS
@@ -31,7 +75,8 @@ public struct HWListItem: View {
     HStack(alignment: .top, spacing: 8) {
       if model.selectableType != nil {
         Button(action: { }) {
-          HWIcon(name: "")
+          Image(selectableIcon, bundle: HeartwoodTokens.bundle)
+            .foregroundColor(buttonColor)
         }
       }
       if model.avatarString != nil {
@@ -42,36 +87,46 @@ public struct HWListItem: View {
         ))
       } else if model.icon != nil {
         Button(action: { }) {
-          HWIcon(name: model.icon!)
+          Image(HWStyles.getIconName(from: model.icon!), bundle: HeartwoodTokens.bundle)
+            .foregroundColor(iconColor)
           }
         .disabled(true)
-//        .foregroundColor(Color.secondary)
       }
       VStack(alignment: .leading) {
         Text(model.title)
+          .font(titleFont)
+          .foregroundColor(titleColor)
         if model.subtitle != nil {
           Text(model.subtitle!)
+            .font(subtitleFont)
+            .foregroundColor(subtitleColor)
         }
       }
       .layoutPriority(1.0)
       Spacer()
       if model.contextMenuActions != nil {
         Button(action: { }) {
-          HWIcon(name: "")
+          Image(HeartwoodTokens.Icon.more, bundle: HeartwoodTokens.bundle)
+          .foregroundColor(self.buttonColor)
         }
+        .frame(width: nil, height: 42, alignment: .center)
       } else if model.actions != nil {
         if model.actions!.filter({ $0.icon != nil }).count != model.actions!.count {
           ForEach(model.actions!, id: \.id) { action in
             Button(action: { }) {
               Text("\(action.text)")
+                .font(self.subtitleFont)
+                .foregroundColor(self.buttonColor)
             }
             .frame(width: nil, height: 42, alignment: .center)
           }
         } else {
           ForEach(model.actions!, id: \.id) { action in
             Button(action: { }) {
-              HWIcon(name: action.icon!)
+              Image(HWStyles.getIconName(from: action.icon!), bundle: HeartwoodTokens.bundle)
+                .foregroundColor(self.buttonColor)
             }
+            .frame(width: nil, height: 42, alignment: .center)
           }
         }
       } else if model.toggleId != nil {
@@ -135,8 +190,8 @@ struct HWListItem_Previews: PreviewProvider {
           subtitle: "Stylist",
           avatarString: "https://randomuser.me/api/portraits/women/71.jpg",
           contextMenuActions: [
-            HWAction(id: "0", text: "Undo", icon: "SPIcon.add"),
-            HWAction(id: "1", text: "Redo", icon: "SPIcon.settings"),
+            HWAction(id: "0", text: "Undo", icon: "add"),
+            HWAction(id: "1", text: "Redo", icon: "settings"),
           ]
           ),
         HWListItem.Model(
@@ -145,8 +200,8 @@ struct HWListItem_Previews: PreviewProvider {
           subtitle: "Stylist",
           avatarString: "https://randomuser.me/api/portraits/women/71.jpg",
           actions: [
-            HWAction(id: "0", text: "Undo", icon: "SPIcon.add"),
-            HWAction(id: "1", text: "Redo", icon: "SPIcon.settings"),
+            HWAction(id: "0", text: "Undo", icon: "add"),
+            HWAction(id: "1", text: "Redo", icon: "settings"),
           ]
           ),
       ]

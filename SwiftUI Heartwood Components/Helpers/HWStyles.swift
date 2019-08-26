@@ -52,6 +52,11 @@ enum HWStyles {
     return Color(dynamicColor)
   }
   
+  static func getIconName(from givenString: String) -> String {
+    // TODO: Should make `HeartwoodTokens.Icon iterable` so can find actual value
+    return "ic_\(givenString)"
+  }
+  
 }
 
 
