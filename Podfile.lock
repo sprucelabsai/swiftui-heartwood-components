@@ -1,0 +1,16 @@
+PODS:
+  - HeartwoodTokens (0.1.0)
+
+DEPENDENCIES:
+  - HeartwoodTokens (from `../heartwood-tokens`)
+
+EXTERNAL SOURCES:
+  HeartwoodTokens:
+    :path: "../heartwood-tokens"
+
+SPEC CHECKSUMS:
+  HeartwoodTokens: 2d4d68f0b5fa7b22d9669c5c602cacc3dd5b0f43
+
+PODFILE CHECKSUM: bd4fce704a5fa78305fca4ec144fafdc2de16ebc
+
+COCOAPODS: 1.7.5

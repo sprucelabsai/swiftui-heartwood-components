@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import HeartwoodTokens
 
 struct HWAvatar: View {
   
@@ -47,6 +48,19 @@ struct HWAvatar: View {
       : HWStyles.avatarHeightMedium
   }
   
+  private var titleFont: Font {
+    let name =  HeartwoodTokens.Font.semibold.name
+    let size = HeartwoodTokens.Font.Size.font3
+    return HWStyles.dynamicFont(name: name, size: size)
+  }
+
+  private var subtitleFont: Font {
+    let name =  HeartwoodTokens.Font.regular.name
+    let size = HeartwoodTokens.Font.Size.font2
+    return HWStyles.dynamicFont(name: name, size: size)
+  }
+
+  
   @State var model: Model
   
   var body: some View {
@@ -77,10 +91,11 @@ struct HWAvatar: View {
     
     let TextStack = VStack(alignment: model.isVertical ? .center : .leading) {
       if model.name != nil {
-        Text(model.name!)
+        Text(model.name!).font(titleFont)
+        
       }
       if model.text != nil {
-        Text(model.text!)
+        Text(model.text!).font(subtitleFont)
       }
     }
     
