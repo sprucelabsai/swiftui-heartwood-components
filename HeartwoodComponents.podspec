@@ -24,10 +24,11 @@ Pod::Spec.new do |spec|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = <<-DESC
-                   DESC
+  spec.description      = <<-DESC
+    TODO: Add long description of the pod here.
+                       DESC
 
-  spec.homepage     = "http://EXAMPLE/HeartwoodComponents"
+  spec.homepage     = "https://github.com/sprucelabsai/swiftui-heartwood-components"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,7 +39,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
+  spec.license          = { :type => 'MIT', :file => 'LICENSE' }
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -79,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source           = { :git => 'https://github.com/sprucelabsai/swiftui-heartwood-components.git', :tag => s.version.to_s }
+  spec.source           = { :git => "https://github.com/sprucelabsai/swiftui-heartwood-components.git", :tag => spec.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +91,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  # spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -116,9 +117,9 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
 
-  s.frameworks = 'SwiftUI', 'UIKit'
+  spec.frameworks = 'SwiftUI', 'UIKit'
 
-  s.source_files = '**/*.swift'
+  spec.source_files = '**/*.swift'
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
