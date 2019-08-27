@@ -22,6 +22,7 @@ public struct HWListItem: View {
     var selectableType: HWSelectable?
     var actions: [HWAction]?
     var contextMenuActions: [HWAction]?
+    var canPushView = false
   }
   
   private var titleFont: Font {
@@ -102,7 +103,14 @@ public struct HWListItem: View {
       }
       .layoutPriority(1.0)
       Spacer()
-      if model.contextMenuActions != nil {
+      if model.canPushView == true {
+        Button(action: { }) {
+          HWIcon(name: HeartwoodTokens.Icon.fillKeyboardArrowRight)
+            .accessibility(addTraits: .causesPageTurn)
+            .foregroundColor(self.subtitleColor)
+        }
+        .frame(width: nil, height: 42, alignment: .center)
+      } else if model.contextMenuActions != nil {
         Button(action: { }) {
           HWIcon(name: HeartwoodTokens.Icon.more)
           .foregroundColor(self.buttonColor)
@@ -159,7 +167,8 @@ struct HWListItem_Previews: PreviewProvider {
           id: "3",
           title: "Jessica Lee Wilson",
           subtitle: "Stylist",
-          avatarString: "https://randomuser.me/api/portraits/women/65.jpg"
+          avatarString: "https://randomuser.me/api/portraits/women/65.jpg",
+          canPushView: true
           ),
         HWListItem.Model(
           id: "4",
