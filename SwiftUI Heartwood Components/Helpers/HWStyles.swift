@@ -14,9 +14,6 @@ import HeartwoodTokens
 enum HWStyles {
   
   // Avatar
-  static let avatarHeightLarge: CGFloat = 96
-  static let avatarHeightMedium: CGFloat = 40
-  static let avatarHeightsmall: CGFloat = 22
   static let onlinIndicatorWidth: CGFloat = 10
   static let onlineIndicatorStroke: CGFloat = 1
   
@@ -41,6 +38,10 @@ enum HWStyles {
     }
   }
   
+  // NOTE: Unfortunately, we cannot set static dynamic colors because we set
+  // colors programatically. If we used dynamic color xcassets we could just
+  // use them like `Color(.primary)`, but these files are not automatable (yet)
+  // so we cannot import them from HeartwoodTokens.
   static func dynamicColor(_ color: HeartwoodTokens.DynamicColor) -> Color {
     let dynamicColor = UIColor { (traitCollection: UITraitCollection) -> UIColor in
       if traitCollection.userInterfaceStyle == .dark {

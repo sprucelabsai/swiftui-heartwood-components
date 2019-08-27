@@ -7,9 +7,46 @@
 //
 
 import SwiftUI
+import HeartwoodTokens
 
 // TODO: Should get icon names and symbols from design tokens.
 
+struct HWIcon: View {
+  
+  var name: String
+  
+  var accessibilityLabel: Text {
+    let label = name.replacingOccurrences(of: "_", with: " ")
+      .replacingOccurrences(of: "ic", with: "")
+      .replacingOccurrences(of: "fill", with: "") + " icon"
+    return Text(verbatim: label)
+  }
+  
+  var body: some View {
+    Image(name, bundle: HeartwoodTokens.bundle)
+      .accessibility(label: accessibilityLabel)
+      .imageScale(.small)
+  }
+  
+  static func getIconName(from givenString: String) -> String {
+    // TODO: Should make `HeartwoodTokens.Icon iterable` so can find actual value
+    return "ic_\(givenString)"
+  }
+  
+}
+
+struct HWIcon_Previews: PreviewProvider {
+    static var previews: some View {
+      HWIcon(name: "ic_settings")
+    }
+}
+
+/*
+ 
+ // Once Apple API is ready AND we can supply icon svg files
+ // through design tokens, update this struct to use dynamic
+ // images.
+ 
 struct HWIcon: View {
   
   var name: String
@@ -26,14 +63,8 @@ struct HWIcon: View {
   }
   
   var body: some View {
-//    Image(uiImage: dynamicImage)
     Image(systemName: "star")
       .imageScale(.small)
   }
 }
-
-struct HWIcon_Previews: PreviewProvider {
-    static var previews: some View {
-      HWIcon(name: "test-circle")
-    }
-}
+ */

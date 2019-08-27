@@ -6,8 +6,8 @@
 //  Copyright © 2019 Spruce Labs, Inc. All rights reserved.
 //
 
-import SwiftUI
 import HeartwoodTokens
+import SwiftUI
 
 public struct HWListItem: View {
   
@@ -74,10 +74,8 @@ public struct HWListItem: View {
   public var body: some View {
     HStack(alignment: .top, spacing: 8) {
       if model.selectableType != nil {
-        Button(action: { }) {
-          Image(selectableIcon, bundle: HeartwoodTokens.bundle)
-            .foregroundColor(buttonColor)
-        }
+        HWSelectButton(selectableType: model.selectableType!)
+          .accessibility(label: Text(model.title))
       }
       if model.avatarString != nil {
         HWAvatar(model:
@@ -87,7 +85,7 @@ public struct HWListItem: View {
         ))
       } else if model.icon != nil {
         Button(action: { }) {
-          Image(HWStyles.getIconName(from: model.icon!), bundle: HeartwoodTokens.bundle)
+          HWIcon(name: HWIcon.getIconName(from: model.icon!))
             .foregroundColor(iconColor)
           }
         .disabled(true)
@@ -106,7 +104,7 @@ public struct HWListItem: View {
       Spacer()
       if model.contextMenuActions != nil {
         Button(action: { }) {
-          Image(HeartwoodTokens.Icon.more, bundle: HeartwoodTokens.bundle)
+          HWIcon(name: HeartwoodTokens.Icon.more)
           .foregroundColor(self.buttonColor)
         }
         .frame(width: nil, height: 42, alignment: .center)
@@ -123,7 +121,7 @@ public struct HWListItem: View {
         } else {
           ForEach(model.actions!, id: \.id) { action in
             Button(action: { }) {
-              Image(HWStyles.getIconName(from: action.icon!), bundle: HeartwoodTokens.bundle)
+              HWIcon(name: HWIcon.getIconName(from: action.icon!))
                 .foregroundColor(self.buttonColor)
             }
             .frame(width: nil, height: 42, alignment: .center)
