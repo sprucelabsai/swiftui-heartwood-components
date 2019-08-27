@@ -1,0 +1,21 @@
+PODS:
+  - HeartwoodTokens (0.1.0)
+
+DEPENDENCIES:
+  - HeartwoodTokens (from `https://github.com/sprucelabsai/heartwood-tokens.git`)
+
+EXTERNAL SOURCES:
+  HeartwoodTokens:
+    :git: https://github.com/sprucelabsai/heartwood-tokens.git
+
+CHECKOUT OPTIONS:
+  HeartwoodTokens:
+    :commit: f862361c8e360c982f5a1bfdf6f3574e4ae99bdf
+    :git: https://github.com/sprucelabsai/heartwood-tokens.git
+
+SPEC CHECKSUMS:
+  HeartwoodTokens: 9c94ce154ac8ea146e35fb8e4aa0dba4ee093a71
+
+PODFILE CHECKSUM: 598f0ace77093be7fae1bf1b334fc8b36f9148ba
+
+COCOAPODS: 1.7.5
