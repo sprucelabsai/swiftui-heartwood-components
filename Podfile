@@ -4,7 +4,7 @@ platform :ios, '13.0'
 target 'SwiftUI Heartwood Components' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'HeartwoodTokens', :path => '../heartwood-tokens'
+  pod 'HeartwoodTokens', :git => 'https://github.com/sprucelabsai/heartwood-tokens.git'
   # Pods for SwiftUI Heartwood Components
 
   target 'SwiftUI Heartwood ComponentsTests' do
