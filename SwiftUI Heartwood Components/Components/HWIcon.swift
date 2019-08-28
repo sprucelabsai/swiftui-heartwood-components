@@ -11,7 +11,7 @@ import HeartwoodTokens
 
 // TODO: Should get icon names and symbols from design tokens.
 
-struct HWIcon: View {
+public struct HWIcon: View {
   
   var name: String
   
@@ -22,7 +22,7 @@ struct HWIcon: View {
     return Text(verbatim: label)
   }
   
-  var body: some View {
+  public var body: some View {
     Image(name, bundle: HeartwoodTokens.bundle)
       .accessibility(label: accessibilityLabel)
       .imageScale(.small)

@@ -58,6 +58,13 @@ enum HWStyles {
     return "ic_\(givenString)"
   }
   
+  enum ColorKind: CaseIterable {
+    case primary
+    case success
+    case warning
+    case critical
+  }
+  
 }
 
 

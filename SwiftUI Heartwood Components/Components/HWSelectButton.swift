@@ -9,7 +9,7 @@
 import HeartwoodTokens
 import SwiftUI
 
-struct HWSelectButton: View {
+public struct HWSelectButton: View {
   
   @State var isSelected: Bool = false
   var selectableType: HWSelectable
@@ -34,7 +34,7 @@ struct HWSelectButton: View {
     }
   }
   
-  var body: some View {
+  public var body: some View {
     Button(action: { self.isSelected.toggle() }) {
       HWIcon(name: iconName)
         .foregroundColor(buttonColor)
