@@ -29,6 +29,7 @@
 		DFA2001D2316D75800DED85F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2001C2316D75800DED85F /* HomeView.swift */; };
 		DFA2001F2316E17400DED85F /* HWToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2001E2316E17400DED85F /* HWToast.swift */; };
 		DFA200212316E1C200DED85F /* HWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA200202316E1C200DED85F /* HWButton.swift */; };
+		DFA200232316F4E200DED85F /* HWLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA200222316F4E200DED85F /* HWLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		DFA2001C2316D75800DED85F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DFA2001E2316E17400DED85F /* HWToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWToast.swift; sourceTree = "<group>"; };
 		DFA200202316E1C200DED85F /* HWButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWButton.swift; sourceTree = "<group>"; };
+		DFA200222316F4E200DED85F /* HWLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWLoader.swift; sourceTree = "<group>"; };
 		E4D8EB05F43DD4D5D3C2D52F /* Pods-SwiftUI Heartwood ComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI Heartwood ComponentsTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI Heartwood ComponentsTests/Pods-SwiftUI Heartwood ComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -211,6 +213,7 @@
 				DF1961A72315B94700B88719 /* HWSelectButton.swift */,
 				DFA2001E2316E17400DED85F /* HWToast.swift */,
 				DFA200202316E1C200DED85F /* HWButton.swift */,
+				DFA200222316F4E200DED85F /* HWLoader.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 				DF24EFFD230DD13200219B7A /* HWSelectable.swift in Sources */,
 				DF37EAE4230E02D800840836 /* HWIcon.swift in Sources */,
 				DF37EAE8230E14B900840836 /* HWOnlineStatus.swift in Sources */,
+				DFA200232316F4E200DED85F /* HWLoader.swift in Sources */,
 				DF24EFCB230DB6E700219B7A /* ContentView.swift in Sources */,
 				DFA2001D2316D75800DED85F /* HomeView.swift in Sources */,
 				DF96466D230EFCB800CEE359 /* HWStyles.swift in Sources */,
