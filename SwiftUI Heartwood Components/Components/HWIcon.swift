@@ -18,7 +18,7 @@ public struct HWIcon: View {
   var accessibilityLabel: Text {
     let label = name.replacingOccurrences(of: "_", with: " ")
       .replacingOccurrences(of: "ic", with: "")
-      .replacingOccurrences(of: "fill", with: "") + " icon"
+      .replacingOccurrences(of: "fill", with: "")
     return Text(verbatim: label)
   }
   

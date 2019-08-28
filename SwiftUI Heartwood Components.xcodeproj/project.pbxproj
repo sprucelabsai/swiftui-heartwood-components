@@ -30,6 +30,10 @@
 		DFA2001F2316E17400DED85F /* HWToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2001E2316E17400DED85F /* HWToast.swift */; };
 		DFA200212316E1C200DED85F /* HWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA200202316E1C200DED85F /* HWButton.swift */; };
 		DFA200232316F4E200DED85F /* HWLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA200222316F4E200DED85F /* HWLoader.swift */; };
+		DFA20026231722FB00DED85F /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA20025231722FB00DED85F /* AvatarView.swift */; };
+		DFA2002823172F6800DED85F /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2002723172F6800DED85F /* ButtonView.swift */; };
+		DFA2002A231737BF00DED85F /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA20029231737BF00DED85F /* ListItemView.swift */; };
+		DFA2002C2317390900DED85F /* SelectableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2002B2317390900DED85F /* SelectableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +88,10 @@
 		DFA2001E2316E17400DED85F /* HWToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWToast.swift; sourceTree = "<group>"; };
 		DFA200202316E1C200DED85F /* HWButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWButton.swift; sourceTree = "<group>"; };
 		DFA200222316F4E200DED85F /* HWLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWLoader.swift; sourceTree = "<group>"; };
+		DFA20025231722FB00DED85F /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		DFA2002723172F6800DED85F /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		DFA20029231737BF00DED85F /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		DFA2002B2317390900DED85F /* SelectableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableView.swift; sourceTree = "<group>"; };
 		E4D8EB05F43DD4D5D3C2D52F /* Pods-SwiftUI Heartwood ComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI Heartwood ComponentsTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI Heartwood ComponentsTests/Pods-SwiftUI Heartwood ComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,6 +171,7 @@
 		DF24EFC5230DB6E700219B7A /* SwiftUI Heartwood Components */ = {
 			isa = PBXGroup;
 			children = (
+				DFA20024231722CB00DED85F /* AppViews */,
 				DF96466B230EFC9200CEE359 /* Helpers */,
 				DF24EFF9230DD09500219B7A /* Models */,
 				DF24EFF6230DB76100219B7A /* Components */,
@@ -234,6 +243,17 @@
 				DF96466C230EFCB800CEE359 /* HWStyles.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DFA20024231722CB00DED85F /* AppViews */ = {
+			isa = PBXGroup;
+			children = (
+				DFA20025231722FB00DED85F /* AvatarView.swift */,
+				DFA2002723172F6800DED85F /* ButtonView.swift */,
+				DFA20029231737BF00DED85F /* ListItemView.swift */,
+				DFA2002B2317390900DED85F /* SelectableView.swift */,
+			);
+			path = AppViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -459,11 +479,15 @@
 			files = (
 				DFA200212316E1C200DED85F /* HWButton.swift in Sources */,
 				DF24EFC7230DB6E700219B7A /* AppDelegate.swift in Sources */,
+				DFA2002C2317390900DED85F /* SelectableView.swift in Sources */,
 				DF24EFF8230DCFAA00219B7A /* HWListItem.swift in Sources */,
 				DF24EFFB230DD0BB00219B7A /* HWAction.swift in Sources */,
+				DFA2002823172F6800DED85F /* ButtonView.swift in Sources */,
 				DF24EFC9230DB6E700219B7A /* SceneDelegate.swift in Sources */,
+				DFA20026231722FB00DED85F /* AvatarView.swift in Sources */,
 				DF1961A82315B94700B88719 /* HWSelectButton.swift in Sources */,
 				DF24EFFD230DD13200219B7A /* HWSelectable.swift in Sources */,
+				DFA2002A231737BF00DED85F /* ListItemView.swift in Sources */,
 				DF37EAE4230E02D800840836 /* HWIcon.swift in Sources */,
 				DF37EAE8230E14B900840836 /* HWOnlineStatus.swift in Sources */,
 				DFA200232316F4E200DED85F /* HWLoader.swift in Sources */,

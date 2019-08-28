@@ -47,11 +47,31 @@ struct HomeView: View {
       canPushView: true
     ),
   ]
-  
+
   var body: some View {
     NavigationView {
       List(items) { item in
-        HWListItem(model: item)
+        ZStack {
+          if item.id == "avatar" {
+            NavigationLink(destination: AvatarView(), label: {
+              EmptyView()
+            })
+          } else if item.id == "button" {
+            NavigationLink(destination: ButtonView(), label: {
+              EmptyView()
+            })
+          } else if item.id == "listItem" {
+            NavigationLink(destination: ListItemView(), label: {
+              EmptyView()
+            })
+          } else if item.id == "selectable" {
+            NavigationLink(destination: SelectableView(), label: {
+              EmptyView()
+            })
+          }
+          
+          HWListItem(model: item)
+        }
       }
       .navigationBarTitle(
         Text("SwiftUI Heartwood Components"), displayMode: .inline

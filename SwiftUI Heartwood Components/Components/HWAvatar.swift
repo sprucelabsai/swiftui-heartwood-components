@@ -44,6 +44,11 @@ struct HWAvatar: View {
     return HWStyles.dynamicColor(color)
   }
   
+  private var neutralColor: Color {
+    let dynamicColor = HeartwoodTokens.Color.colorNeutral
+    return HWStyles.dynamicColor(dynamicColor)
+  }
+  
   private var avatarDimension: CGFloat {
     let size = model.isLarge
       ? HeartwoodTokens.ComponentStyle.componentsAvatarSizeLarge
@@ -98,8 +103,7 @@ struct HWAvatar: View {
           .foregroundColor(indicatorColor)
           .overlay(
             Circle()
-              // TODO: Use actual color for stroke
-              .stroke(Color.white, lineWidth: HWStyles.onlineIndicatorStroke)
+              .stroke(neutralColor, lineWidth: HWStyles.onlineIndicatorStroke)
           )
           .padding([.top, .trailing], model.isLarge ? 8 : 0)
       }

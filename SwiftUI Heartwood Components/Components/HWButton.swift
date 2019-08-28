@@ -80,11 +80,12 @@ struct HWButton: View {
             }
             if model.title != nil {
               Text(model.title ?? "")
+                .layoutPriority(1.0)
                 .font(titleFont)
                 .foregroundColor(model.isLoading ? .clear : contentColor)
             }
           }
-        }
+        }.layoutPriority(1.0)
         if model.isFullWidth {
           Spacer()
         }
