@@ -12,5 +12,11 @@ public struct HWAction: Identifiable {
   public let id: String
   public var text: String
   public var icon: String?
-  public var isIconOnly: Bool = false
+  public var isIconOnly: Bool
+  public init(id: String, text: String, icon: String? = nil, isIconOnly: Bool = false) {
+    self.id = id
+    self.text = text
+    self.icon = icon
+    self.isIconOnly = isIconOnly
+  }
 }

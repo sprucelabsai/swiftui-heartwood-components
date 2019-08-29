@@ -17,8 +17,15 @@ public struct HWToast: View {
     public let id: String
     public let headline: String
     public var text: String?
-    public var kind: Kind = .info
+    public var kind: Kind
     public var followupText: String?
+    public init(id: String, headline: String, text: String? = nil, kind: Kind = .info, followupText: String? = nil) {
+      self.id = id
+      self.headline = headline
+      self.text = text
+      self.kind = kind
+      self.followupText = followupText
+    }
   }
   
   public enum Kind {
