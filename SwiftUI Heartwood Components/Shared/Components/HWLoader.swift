@@ -27,6 +27,8 @@ public struct HWLoader: View {
     }
   }
   
+  public init(){}
+  
   public var body: some View {
     WedgeShape()
       .rotationEffect(.degrees(spin ? 360 : 0))

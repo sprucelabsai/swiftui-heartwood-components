@@ -11,7 +11,7 @@ import SwiftUI
 
 public struct HWToast: View {
   
-  @State public var model: Model
+  public var model: Model
   
   public struct Model: Identifiable {
     public let id: String
@@ -62,6 +62,10 @@ public struct HWToast: View {
     let name =  HeartwoodTokens.Font.regular.name
     let size = HeartwoodTokens.Font.Size.font2
     return HWStyles.dynamicFont(name: name, size: size)
+  }
+  
+  public init(model: Model){
+    self.model = model
   }
   
   public var body: some View {

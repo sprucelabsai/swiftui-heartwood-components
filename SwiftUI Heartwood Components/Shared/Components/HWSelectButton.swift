@@ -34,6 +34,10 @@ public struct HWSelectButton: View {
     }
   }
   
+  public init(selectableType: HWSelectable){
+    self.selectableType = selectableType
+  }
+  
   public var body: some View {
     Button(action: { self.isSelected.toggle() }) {
       HWIcon(name: iconName)

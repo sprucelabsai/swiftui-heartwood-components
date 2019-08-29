@@ -93,7 +93,10 @@ public struct HWListItem: View {
     
   }
   
-  @State public var model: Model
+  public var model: Model
+  public init(model: Model){
+    self.model = model
+  }
   
   @State var toggleIsOn: Bool = false // TODO REMOVE THIS
   
