@@ -11,7 +11,7 @@ import HeartwoodTokens
 
 // All colors, font sizes and fonts should come from design tokens
 
-enum HWStyles {
+public enum HWStyles {
   
   // Avatar
   static let onlinIndicatorWidth: CGFloat = 10
@@ -20,7 +20,7 @@ enum HWStyles {
   // ListItem
   static let horizonatlSpacing: CGFloat = 8
   
-  static func dynamicFont(name: String, size: Int) -> Font {
+  public static func dynamicFont(name: String, size: Int) -> Font {
     let textStyle = dynamicTextStyle(for: size)
     let font = UIFont(name: name, size: CGFloat(size)) ?? UIFont()
     let dynamicSize = UIFontMetrics(forTextStyle: textStyle)
@@ -30,7 +30,7 @@ enum HWStyles {
     return dynamicFont
   }
   
-  static func dynamicTextStyle(for size: Int) -> UIFont.TextStyle {
+  public static func dynamicTextStyle(for size: Int) -> UIFont.TextStyle {
     switch size {
     case 0..<16: return .body
     case 16..<24: return .headline
@@ -42,7 +42,7 @@ enum HWStyles {
   // colors programatically. If we used dynamic color xcassets we could just
   // use them like `Color(.primary)`, but these files are not automatable (yet)
   // so we cannot import them from HeartwoodTokens.
-  static func dynamicColor(_ color: HeartwoodTokens.DynamicColor) -> Color {
+  public static func dynamicColor(_ color: HeartwoodTokens.DynamicColor) -> Color {
     let dynamicColor = UIColor { (traitCollection: UITraitCollection) -> UIColor in
       if traitCollection.userInterfaceStyle == .dark {
         return color.night
@@ -53,9 +53,16 @@ enum HWStyles {
     return Color(dynamicColor)
   }
   
-  static func getIconName(from givenString: String) -> String {
+  public static func getIconName(from givenString: String) -> String {
     // TODO: Should make `HeartwoodTokens.Icon iterable` so can find actual value
     return "ic_\(givenString)"
+  }
+  
+  public enum ColorKind: CaseIterable {
+    case primary
+    case success
+    case warning
+    case critical
   }
   
 }

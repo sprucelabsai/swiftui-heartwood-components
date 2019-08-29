@@ -13,16 +13,16 @@ public struct HWListItem: View {
   
   public struct Model: Identifiable {
     public let id: String
-    var title: String
-    var subtitle: String?
-    var avatarString: String?
-    var icon: String?
-    var toggleId: String?
-    var isSeparatorVisible: Bool = true
-    var selectableType: HWSelectable?
-    var actions: [HWAction]?
-    var contextMenuActions: [HWAction]?
-    var canPushView = false
+    public var title: String
+    public var subtitle: String?
+    public var avatarString: String?
+    public var icon: String?
+    public var toggleId: String?
+    public var isSeparatorVisible: Bool = true
+    public var selectableType: HWSelectable?
+    public var actions: [HWAction]?
+    public var contextMenuActions: [HWAction]?
+    public var canPushView = false
   }
   
   private var titleFont: Font {
@@ -68,7 +68,7 @@ public struct HWListItem: View {
     
   }
   
-  @State var model: Model
+  public @State var model: Model
   
   @State var toggleIsOn: Bool = false // TODO REMOVE THIS
   

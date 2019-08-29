@@ -11,18 +11,18 @@ import HeartwoodTokens
 
 // TODO: Should get icon names and symbols from design tokens.
 
-struct HWIcon: View {
+public struct HWIcon: View {
   
-  var name: String
+  public var name: String
   
-  var accessibilityLabel: Text {
+  private var accessibilityLabel: Text {
     let label = name.replacingOccurrences(of: "_", with: " ")
       .replacingOccurrences(of: "ic", with: "")
-      .replacingOccurrences(of: "fill", with: "") + " icon"
+      .replacingOccurrences(of: "fill", with: "")
     return Text(verbatim: label)
   }
   
-  var body: some View {
+  public var body: some View {
     Image(name, bundle: HeartwoodTokens.bundle)
       .accessibility(label: accessibilityLabel)
       .imageScale(.small)

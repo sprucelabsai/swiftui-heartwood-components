@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct HWAction: Identifiable {
-  let id: String
-  var text: String
-  var icon: String?
-  var isIconOnly: Bool = false
+public struct HWAction: Identifiable {
+  public let id: String
+  public var text: String
+  public var icon: String?
+  public var isIconOnly: Bool = false
 }
