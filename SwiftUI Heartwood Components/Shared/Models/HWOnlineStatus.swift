@@ -9,6 +9,6 @@
 import Foundation
 
 public enum HWOnlineStatus {
-  public case offline
-  public case online
+  case offline
+  case online
 }

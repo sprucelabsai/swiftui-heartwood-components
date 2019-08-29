@@ -26,9 +26,9 @@ public struct HWButton: View {
   }
   
   public enum Kind {
-    public case primary
-    public case secondary
-    public case simple
+    case primary
+    case secondary
+    case simple
   }
   
   private var titleFont: Font {
