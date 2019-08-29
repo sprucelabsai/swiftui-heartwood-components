@@ -64,7 +64,7 @@
 		A66FFD833875AB9A3CC3A0EA /* Pods-SwiftUI Heartwood ComponentsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI Heartwood ComponentsUITests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUI Heartwood ComponentsUITests/Pods-SwiftUI Heartwood ComponentsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AF1E3D8F79DF074446031926 /* Pods-SwiftUI Heartwood ComponentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI Heartwood ComponentsTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUI Heartwood ComponentsTests/Pods-SwiftUI Heartwood ComponentsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DF1961A72315B94700B88719 /* HWSelectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWSelectButton.swift; sourceTree = "<group>"; };
-		DF24EFC3230DB6E700219B7A /* SwiftUI Heartwood Components.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Heartwood Components.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF24EFC3230DB6E700219B7A /* Heartwood Components.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heartwood Components.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF24EFC6230DB6E700219B7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF24EFC8230DB6E700219B7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DF24EFCA230DB6E700219B7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -163,7 +163,7 @@
 		DF24EFC4230DB6E700219B7A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DF24EFC3230DB6E700219B7A /* SwiftUI Heartwood Components.app */,
+				DF24EFC3230DB6E700219B7A /* Heartwood Components.app */,
 				DF24EFD9230DB6EA00219B7A /* SwiftUI Heartwood ComponentsTests.xctest */,
 				DF24EFE4230DB6EA00219B7A /* SwiftUI Heartwood ComponentsUITests.xctest */,
 			);
@@ -278,7 +278,7 @@
 			);
 			name = "SwiftUI Heartwood Components";
 			productName = "SwiftUI Heartwood Components";
-			productReference = DF24EFC3230DB6E700219B7A /* SwiftUI Heartwood Components.app */;
+			productReference = DF24EFC3230DB6E700219B7A /* Heartwood Components.app */;
 			productType = "com.apple.product-type.application";
 		};
 		DF24EFD8230DB6EA00219B7A /* SwiftUI Heartwood ComponentsTests */ = {
@@ -675,7 +675,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ai.spruce.SwiftUI-Heartwood-Components";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Heartwood Components";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -696,7 +696,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ai.spruce.SwiftUI-Heartwood-Components";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Heartwood Components";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

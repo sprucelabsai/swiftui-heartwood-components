@@ -77,6 +77,7 @@ struct HWToast: View {
           .lineLimit(nil)
           .foregroundColor(neutralColor)
           .layoutPriority(1.0)
+          .padding(.bottom, model.followupText == nil ? 4 : 0)
       }
       if model.followupText != nil {
         Button(action: {}) {
@@ -102,7 +103,7 @@ struct HWToast_Previews: PreviewProvider {
     let model = HWToast.Model(
       id: "1",
       headline: "Successfully added teammate",
-      text: "Way to go! You're so good at adding teammates. I can't wait to see what you do next.",
+//      text: "Way to go! You're so good at adding teammates. I can't wait to see what you do next.",
       kind: .warn,
       followupText: "Undo"
     )
