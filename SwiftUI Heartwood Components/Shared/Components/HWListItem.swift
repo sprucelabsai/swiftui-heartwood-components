@@ -68,7 +68,7 @@ public struct HWListItem: View {
     
   }
   
-  public @State var model: Model
+  @State public var model: Model
   
   @State var toggleIsOn: Bool = false // TODO REMOVE THIS
   

@@ -9,8 +9,8 @@
 import Foundation
 
 public enum HWSelectable {
-  public case singleSelectable
-  public case multiSelectable
+  case singleSelectable
+  case multiSelectable
   public var name: String {
     switch self {
     case .singleSelectable: return "radio button"

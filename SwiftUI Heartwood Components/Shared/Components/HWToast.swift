@@ -22,11 +22,11 @@ public struct HWToast: View {
   }
   
   public enum Kind {
-    public case neutral
-    public case positive
-    public case negative
-    public case warn
-    public case info
+    case neutral
+    case positive
+    case negative
+    case warn
+    case info
     public var color: Color {
       var dynamicColor: HeartwoodTokens.DynamicColor
       switch self {
