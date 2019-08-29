@@ -13,9 +13,9 @@ import HeartwoodTokens
 
 public struct HWIcon: View {
   
-  var name: String
+  public var name: String
   
-  var accessibilityLabel: Text {
+  private var accessibilityLabel: Text {
     let label = name.replacingOccurrences(of: "_", with: " ")
       .replacingOccurrences(of: "ic", with: "")
       .replacingOccurrences(of: "fill", with: "")

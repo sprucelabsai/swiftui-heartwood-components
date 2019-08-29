@@ -119,7 +119,12 @@ Pod::Spec.new do |spec|
 
   spec.frameworks = 'SwiftUI', 'UIKit'
 
-  spec.source_files = '**/*.swift'
+  spec.source_files = 'SwiftUI Heartwood Components/Shared/**/*.swift'
+  spec.resource_bundles = {
+    'HeartwoodTokens' => ['Pods//**/*']
+  }
+
+  spec.dependency 'HeartwoodTokens'
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"

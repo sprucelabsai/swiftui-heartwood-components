@@ -9,17 +9,17 @@
 import SwiftUI
 import HeartwoodTokens
 
-struct HWAvatar: View {
+public struct HWAvatar: View {
   
-  struct Model: Identifiable {
-    let id: String
-    let imageURLString: String
-    var name: String?
-    var text: String?
-    var showIndicator = false
-    var status: HWOnlineStatus?
-    var isLarge = false
-    var isVertical = false
+  public struct Model: Identifiable {
+    public let id: String
+    public let imageURLString: String
+    public var name: String?
+    public var text: String?
+    public var showIndicator = false
+    public var status: HWOnlineStatus?
+    public var isLarge = false
+    public var isVertical = false
   }
   
   private var avatar: UIImage {
@@ -82,9 +82,9 @@ struct HWAvatar: View {
     return HWStyles.dynamicColor(color)
   }
   
-  @State var model: Model
+  @State public var model: Model
   
-  var body: some View {
+  public var body: some View {
     
     let ImageStack = ZStack(alignment: .topTrailing) {
       Image(uiImage: avatar )

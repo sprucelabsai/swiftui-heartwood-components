@@ -9,26 +9,26 @@
 import HeartwoodTokens
 import SwiftUI
 
-struct HWButton: View {
+public struct HWButton: View {
   
-  @State var model: Model
+  @State public var model: Model
   
-  struct Model: Identifiable {
-    let id: String
-    let action: () -> Void
-    var title: String?
-    var icon: String?
-    var kind: Kind = .primary
-    var colorKind: HWStyles.ColorKind = .primary
-    var isDisabled = false
-    var isLoading = false
-    var isFullWidth = true
+  public struct Model: Identifiable {
+    public let id: String
+    public let action: () -> Void
+    public var title: String?
+    public var icon: String?
+    public var kind: Kind = .primary
+    public var colorKind: HWStyles.ColorKind = .primary
+    public var isDisabled = false
+    public var isLoading = false
+    public var isFullWidth = true
   }
   
-  enum Kind {
-    case primary
-    case secondary
-    case simple
+  public enum Kind {
+    public case primary
+    public case secondary
+    public case simple
   }
   
   private var titleFont: Font {
@@ -61,7 +61,7 @@ struct HWButton: View {
   // to override the onPress BG color in the less ideal way as shown at:
   // https://stackoverflow.com/questions/56509640/how-to-set-custom-highlighted-state-of-swiftui-button
   
-  var body: some View {
+  public var body: some View {
     Button(action: model.action) {
       HStack(alignment: .center) {
         if model.isFullWidth {

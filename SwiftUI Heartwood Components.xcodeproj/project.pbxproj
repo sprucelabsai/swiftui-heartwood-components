@@ -173,10 +173,8 @@
 		DF24EFC5230DB6E700219B7A /* SwiftUI Heartwood Components */ = {
 			isa = PBXGroup;
 			children = (
+				DF309C2523186C4A00BFE4EE /* Shared */,
 				DFA20024231722CB00DED85F /* AppViews */,
-				DF96466B230EFC9200CEE359 /* Helpers */,
-				DF24EFF9230DD09500219B7A /* Models */,
-				DF24EFF6230DB76100219B7A /* Components */,
 				DF24EFC6230DB6E700219B7A /* AppDelegate.swift */,
 				DF24EFC8230DB6E700219B7A /* SceneDelegate.swift */,
 				DF24EFCA230DB6E700219B7A /* ContentView.swift */,
@@ -237,6 +235,16 @@
 				DF37EAE7230E14B900840836 /* HWOnlineStatus.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DF309C2523186C4A00BFE4EE /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				DF96466B230EFC9200CEE359 /* Helpers */,
+				DF24EFF9230DD09500219B7A /* Models */,
+				DF24EFF6230DB76100219B7A /* Components */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		DF96466B230EFC9200CEE359 /* Helpers */ = {
@@ -674,10 +682,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ai.spruce.SwiftUI-Heartwood-Components";
+				PRODUCT_BUNDLE_IDENTIFIER = "ai.spruce.heartwood-components";
 				PRODUCT_NAME = "Heartwood Components";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -695,10 +703,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ai.spruce.SwiftUI-Heartwood-Components";
+				PRODUCT_BUNDLE_IDENTIFIER = "ai.spruce.heartwood-components";
 				PRODUCT_NAME = "Heartwood Components";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -11,8 +11,8 @@ import SwiftUI
 
 public struct HWSelectButton: View {
   
-  @State var isSelected: Bool = false
-  var selectableType: HWSelectable
+  @State public var isSelected: Bool = false
+  public var selectableType: HWSelectable
   
   private var buttonColor: Color {
     let color = isSelected

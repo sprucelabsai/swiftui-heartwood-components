@@ -9,25 +9,25 @@
 import HeartwoodTokens
 import SwiftUI
 
-struct HWToast: View {
+public struct HWToast: View {
   
-  @State var model: Model
+  @State public var model: Model
   
-  struct Model: Identifiable {
-    let id: String
-    let headline: String
-    var text: String?
-    var kind: Kind = .info
-    var followupText: String?
+  public struct Model: Identifiable {
+    public let id: String
+    public let headline: String
+    public var text: String?
+    public var kind: Kind = .info
+    public var followupText: String?
   }
   
-  enum Kind {
-    case neutral
-    case positive
-    case negative
-    case warn
-    case info
-    var color: Color {
+  public enum Kind {
+    public case neutral
+    public case positive
+    public case negative
+    public case warn
+    public case info
+    public var color: Color {
       var dynamicColor: HeartwoodTokens.DynamicColor
       switch self {
       case .neutral: dynamicColor = HeartwoodTokens.Color.textColorBase
@@ -57,7 +57,7 @@ struct HWToast: View {
     return HWStyles.dynamicFont(name: name, size: size)
   }
   
-  var body: some View {
+  public var body: some View {
     VStack(alignment: .leading, spacing: 0) {
       HStack {
         Text(model.headline)

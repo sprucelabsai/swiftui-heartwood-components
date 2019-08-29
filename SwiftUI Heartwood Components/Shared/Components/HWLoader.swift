@@ -8,9 +8,9 @@
 
 import SwiftUI
 
-struct HWLoader: View {
+public struct HWLoader: View {
   
-  @State var spin = false
+  @State private var spin = false
   
   private struct WedgeShape: Shape {
     func path(in rect: CGRect) -> Path {
@@ -27,7 +27,7 @@ struct HWLoader: View {
     }
   }
   
-  var body: some View {
+  public var body: some View {
     WedgeShape()
       .rotationEffect(.degrees(spin ? 360 : 0))
       .animation(
