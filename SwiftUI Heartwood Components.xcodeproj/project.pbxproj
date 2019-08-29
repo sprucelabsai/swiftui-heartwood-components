@@ -34,6 +34,7 @@
 		DFA2002823172F6800DED85F /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2002723172F6800DED85F /* ButtonView.swift */; };
 		DFA2002A231737BF00DED85F /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA20029231737BF00DED85F /* ListItemView.swift */; };
 		DFA2002C2317390900DED85F /* SelectableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2002B2317390900DED85F /* SelectableView.swift */; };
+		DFA2002E231832C900DED85F /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2002D231832C900DED85F /* ToastView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		DFA2002723172F6800DED85F /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		DFA20029231737BF00DED85F /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		DFA2002B2317390900DED85F /* SelectableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableView.swift; sourceTree = "<group>"; };
+		DFA2002D231832C900DED85F /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		E4D8EB05F43DD4D5D3C2D52F /* Pods-SwiftUI Heartwood ComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI Heartwood ComponentsTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI Heartwood ComponentsTests/Pods-SwiftUI Heartwood ComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -252,6 +254,7 @@
 				DFA2002723172F6800DED85F /* ButtonView.swift */,
 				DFA20029231737BF00DED85F /* ListItemView.swift */,
 				DFA2002B2317390900DED85F /* SelectableView.swift */,
+				DFA2002D231832C900DED85F /* ToastView.swift */,
 			);
 			path = AppViews;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				DF24EFC7230DB6E700219B7A /* AppDelegate.swift in Sources */,
 				DFA2002C2317390900DED85F /* SelectableView.swift in Sources */,
 				DF24EFF8230DCFAA00219B7A /* HWListItem.swift in Sources */,
+				DFA2002E231832C900DED85F /* ToastView.swift in Sources */,
 				DF24EFFB230DD0BB00219B7A /* HWAction.swift in Sources */,
 				DFA2002823172F6800DED85F /* ButtonView.swift in Sources */,
 				DF24EFC9230DB6E700219B7A /* SceneDelegate.swift in Sources */,

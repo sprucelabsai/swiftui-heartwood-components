@@ -68,7 +68,11 @@ struct HomeView: View {
             NavigationLink(destination: SelectableView(), label: {
               EmptyView()
             })
-          }
+          } else if item.id == "toast" {
+             NavigationLink(destination: ToastView(), label: {
+               EmptyView()
+             })
+           }
           
           HWListItem(model: item)
         }

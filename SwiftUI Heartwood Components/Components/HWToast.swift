@@ -58,7 +58,7 @@ struct HWToast: View {
   }
   
   var body: some View {
-    VStack(alignment: .leading) {
+    VStack(alignment: .leading, spacing: 0) {
       HStack {
         Text(model.headline)
           .font(titleFont)
@@ -68,18 +68,15 @@ struct HWToast: View {
         Button(action: { }) {
           HWIcon(name: HeartwoodTokens.Icon.fillClose)
             .foregroundColor(self.neutralColor.opacity(0.6))
+          .padding(.trailing, -4)
         }
       }//.padding(.top, -6)
       if model.text != nil {
-        VStack {
-          // This hack fixes a SwiftUI bug - text was only staying at 1 line
-          Text("")
-          Text(model.text!)
-            .font(subtitleFont)
-            .lineLimit(nil)
-            .foregroundColor(neutralColor)
-            .layoutPriority(1.0)
-        }
+        Text(model.text!)
+          .font(subtitleFont)
+          .lineLimit(nil)
+          .foregroundColor(neutralColor)
+          .layoutPriority(1.0)
       }
       if model.followupText != nil {
         Button(action: {}) {
@@ -87,7 +84,8 @@ struct HWToast: View {
           .font(titleFont)
           .foregroundColor(neutralColor)
           .lineLimit(1)
-          .padding(.vertical, 2)
+          .padding(.bottom, 2)
+          .padding(.top, 8)
         }
       }
     }
