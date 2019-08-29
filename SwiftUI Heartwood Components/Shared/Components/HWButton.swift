@@ -13,16 +13,37 @@ public struct HWButton: View {
   
   @State public var model: Model
   
-  public struct Model: Identifiable {
+  public class Model: Identifiable {
     public let id: String
     public let action: () -> Void
     public var title: String?
     public var icon: String?
-    public var kind: Kind = .primary
-    public var colorKind: HWStyles.ColorKind = .primary
-    public var isDisabled = false
-    public var isLoading = false
-    public var isFullWidth = true
+    public var kind: Kind
+    public var colorKind: HWStyles.ColorKind
+    public var isDisabled: Bool
+    public var isLoading: Bool
+    public var isFullWidth: Bool
+    public init(
+      id: String,
+      action: @escaping () -> Void,
+      title: String? = nil,
+      icon: String? = nil,
+      kind: HWButton.Kind = .primary,
+      colorKind: HWStyles.ColorKind = .primary,
+      isDisabled: Bool = false,
+      isLoading: Bool = false,
+      isFullWidth: Bool = true)
+    {
+      self.id = id
+      self.action = action
+      self.title = title
+      self.icon = icon
+      self.kind = kind
+      self.colorKind = colorKind
+      self.isDisabled = isDisabled
+      self.isLoading = isLoading
+      self.isFullWidth = isFullWidth
+    }
   }
   
   public enum Kind {

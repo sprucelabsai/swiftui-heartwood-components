@@ -16,10 +16,29 @@ public struct HWAvatar: View {
     public let imageURLString: String
     public var name: String?
     public var text: String?
-    public var showIndicator = false
+    public var showIndicator: Bool
     public var status: HWOnlineStatus?
-    public var isLarge = false
-    public var isVertical = false
+    public var isLarge: Bool
+    public var isVertical: Bool
+    public init(
+      id: String,
+      imageURLString: String,
+      name: String? = nil,
+      text: String? = nil,
+      showIndicator: Bool = false,
+      status: HWOnlineStatus? = nil,
+      isLarge: Bool = false,
+      isVertical: Bool = false)
+    {
+      self.id = id
+      self.imageURLString = imageURLString
+      self.name = name
+      self.text = text
+      self.showIndicator = showIndicator
+      self.status = status
+      self.isLarge = isLarge
+      self.isVertical = isVertical
+    }
   }
   
   private var avatar: UIImage {

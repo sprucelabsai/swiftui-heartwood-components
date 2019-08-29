@@ -18,11 +18,36 @@ public struct HWListItem: View {
     public var avatarString: String?
     public var icon: String?
     public var toggleId: String?
-    public var isSeparatorVisible: Bool = true
+    public var isSeparatorVisible: Bool
     public var selectableType: HWSelectable?
     public var actions: [HWAction]?
     public var contextMenuActions: [HWAction]?
-    public var canPushView = false
+    public var canPushView: Bool
+    public init(
+      id: String,
+      title: String,
+      subtitle: String? = nil,
+      avatarString: String? = nil,
+      icon: String? = nil,
+      toggleId: String? = nil,
+      isSeparatorVisible: Bool = true,
+      selectableType: HWSelectable? = nil,
+      actions: [HWAction]? = nil,
+      contextMenuActions: [HWAction]? = nil,
+      canPushView: Bool = false)
+    {
+      self.id = id
+      self.title = title
+      self.subtitle = subtitle
+      self.avatarString = avatarString
+      self.icon = icon
+      self.toggleId = toggleId
+      self.isSeparatorVisible = isSeparatorVisible
+      self.selectableType = selectableType
+      self.actions = actions
+      self.contextMenuActions = contextMenuActions
+      self.canPushView = canPushView
+    }
   }
   
   private var titleFont: Font {
