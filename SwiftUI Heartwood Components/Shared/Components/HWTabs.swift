@@ -18,8 +18,8 @@ public struct HWTabs: View {
     }
   }
   
-  private let name = HeartwoodTokens.Font.semibold.name
-  private let size = HeartwoodTokens.Font.Size.font2
+  private let fontName = HeartwoodTokens.Font.semibold.name
+  private let fontSize = HeartwoodTokens.Font.Size.font2
   
   private var titleColor: Color {
     let color = HeartwoodTokens.Color.textColorBase
@@ -27,7 +27,7 @@ public struct HWTabs: View {
   }
   
   private var titleFont: Font {
-    return HWStyles.dynamicFont(name: name, size: size)
+    return HWStyles.dynamicFont(name: fontName, size: fontSize)
   }
   
   private var underlineColor: Color {
@@ -36,8 +36,8 @@ public struct HWTabs: View {
   }
   
   private func tabWidth(at index: Int) -> CGFloat {
-    guard let font = UIFont(name: name, size: CGFloat(size)) else { return 0 }
-    let textStyle = HWStyles.dynamicTextStyle(for: size)
+    guard let font = UIFont(name: fontName, size: CGFloat(fontSize)) else { return 0 }
+    let textStyle = HWStyles.dynamicTextStyle(for: fontSize)
     let dynamicFont = UIFontMetrics(forTextStyle: textStyle)
       .scaledFont(for: font)
     let label = UILabel()
@@ -53,7 +53,6 @@ public struct HWTabs: View {
       if i < selectedIndex {
         padding += tabWidth(at: i) + HWStyles.tabsSpacing
       }
-//      collectionViewWidth += getUnderlineWidthForCell(at: i) + cellSpacing
     }
     return padding
   }
@@ -67,22 +66,25 @@ public struct HWTabs: View {
   }
   
   public var body: some View {
-    VStack(alignment: .leading) {
-      HStack(spacing: HWStyles.tabsSpacing) {
-        ForEach(0..<model.tabs.count, id: \.self) { index in
-          Button(action: { self.selectedIndex = index }) {
-            Text(self.model.tabs[index])
-            .font(self.titleFont)
-            .foregroundColor(self.titleColor)
+    ScrollView(.horizontal, showsIndicators: false) {
+      VStack(alignment: .leading, spacing: 0) {
+        HStack(spacing: HWStyles.tabsSpacing) {
+          ForEach(0..<model.tabs.count, id: \.self) { index in
+            Button(action: { self.selectedIndex = index }) {
+              Text(self.model.tabs[index])
+              .font(self.titleFont)
+              .foregroundColor(self.titleColor)
+                .frame(width: nil, height: 42, alignment: .center)
+            }
           }
+          Spacer()
         }
-        Spacer()
+        Rectangle()
+          .frame(width: tabWidth(at: selectedIndex), height: 3, alignment: .bottomLeading)
+          .foregroundColor(underlineColor)
+          .padding(.leading, leadingPadding)
+          .animation(Animation.spring())
       }
-      Rectangle()
-        .frame(width: tabWidth(at: selectedIndex), height: 3, alignment: .bottomLeading)
-        .foregroundColor(underlineColor)
-        .padding(.leading, leadingPadding)
-        .animation(Animation.spring())
     }
   }
 }
@@ -92,7 +94,11 @@ struct HWTabs_Previews: PreviewProvider {
     let model = HWTabs.Model(tabs: [
       "Dashboard",
       "Notes",
-      "Reports"
+      "Reports",
+      "Pasta",
+      "Sicophantically",
+      "🔥 stuff",
+      "Another long one"
     ])
     return VStack {
       Rectangle().frame(width: nil, height: 200, alignment: .top).foregroundColor(.white)
