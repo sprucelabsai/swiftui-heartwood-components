@@ -101,7 +101,10 @@ public struct HWAvatar: View {
     return HWStyles.dynamicColor(color)
   }
   
-  @State public var model: Model
+  public var model: Model
+  public init(model: Model){
+    self.model = model
+  }
   
   public var body: some View {
     

@@ -11,7 +11,7 @@ import SwiftUI
 
 public struct HWButton: View {
   
-  @State public var model: Model
+  public var model: Model
   
   public class Model: Identifiable {
     public let id: String
@@ -76,6 +76,10 @@ public struct HWButton: View {
   
   private var contentColor: Color {
     return model.kind == .primary ? neutralColor : buttonColor
+  }
+  
+  public init(model: Model){
+    self.model = model
   }
   
   // NOTE: If Apple does not exposed an `onPress`-like method, we'll need

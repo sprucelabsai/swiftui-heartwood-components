@@ -15,6 +15,10 @@ public struct HWIcon: View {
   
   public var name: String
   
+  public init(name: String){
+    self.name = name
+  }
+  
   private var accessibilityLabel: Text {
     let label = name.replacingOccurrences(of: "_", with: " ")
       .replacingOccurrences(of: "ic", with: "")
