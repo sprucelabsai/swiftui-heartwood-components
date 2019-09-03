@@ -35,6 +35,7 @@
 		DFA2002A231737BF00DED85F /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA20029231737BF00DED85F /* ListItemView.swift */; };
 		DFA2002C2317390900DED85F /* SelectableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2002B2317390900DED85F /* SelectableView.swift */; };
 		DFA2002E231832C900DED85F /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2002D231832C900DED85F /* ToastView.swift */; };
+		DFD3A9BD231EE30600364DEF /* HWTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD3A9BC231EE30600364DEF /* HWTabs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		DFA20029231737BF00DED85F /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		DFA2002B2317390900DED85F /* SelectableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableView.swift; sourceTree = "<group>"; };
 		DFA2002D231832C900DED85F /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		DFD3A9BC231EE30600364DEF /* HWTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWTabs.swift; sourceTree = "<group>"; };
 		E4D8EB05F43DD4D5D3C2D52F /* Pods-SwiftUI Heartwood ComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI Heartwood ComponentsTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI Heartwood ComponentsTests/Pods-SwiftUI Heartwood ComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -223,6 +225,7 @@
 				DFA2001E2316E17400DED85F /* HWToast.swift */,
 				DFA200202316E1C200DED85F /* HWButton.swift */,
 				DFA200222316F4E200DED85F /* HWLoader.swift */,
+				DFD3A9BC231EE30600364DEF /* HWTabs.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				DFA200232316F4E200DED85F /* HWLoader.swift in Sources */,
 				DF24EFCB230DB6E700219B7A /* ContentView.swift in Sources */,
 				DFA2001D2316D75800DED85F /* HomeView.swift in Sources */,
+				DFD3A9BD231EE30600364DEF /* HWTabs.swift in Sources */,
 				DF96466D230EFCB800CEE359 /* HWStyles.swift in Sources */,
 				DF37EAE6230E13D700840836 /* HWAvatar.swift in Sources */,
 				DFA2001F2316E17400DED85F /* HWToast.swift in Sources */,
