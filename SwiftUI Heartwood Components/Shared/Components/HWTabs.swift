@@ -48,7 +48,7 @@ public struct HWTabs: View {
   }
   
   private var leadingPadding: CGFloat {
-    var padding: CGFloat = 0
+    var padding: CGFloat = HWStyles.tabsSpacing
     for i in 0..<model.tabs.count {
       if i < selectedIndex {
         padding += tabWidth(at: i) + HWStyles.tabsSpacing
@@ -57,7 +57,7 @@ public struct HWTabs: View {
     return padding
   }
   
-  @State public var selectedIndex: Int = 2
+  @State public var selectedIndex: Int = 0
   
   public var model: Model
   
@@ -69,6 +69,7 @@ public struct HWTabs: View {
     ScrollView(.horizontal, showsIndicators: false) {
       VStack(alignment: .leading, spacing: 0) {
         HStack(spacing: HWStyles.tabsSpacing) {
+          Rectangle().frame(width: 0, height: 0, alignment: .leading)
           ForEach(0..<model.tabs.count, id: \.self) { index in
             Button(action: { self.selectedIndex = index }) {
               Text(self.model.tabs[index])
@@ -97,11 +98,10 @@ struct HWTabs_Previews: PreviewProvider {
       "Reports",
       "Pasta",
       "Sicophantically",
-      "🔥 stuff",
+      "stuff on 🔥",
       "Another long one"
     ])
     return VStack {
-      Rectangle().frame(width: nil, height: 200, alignment: .top).foregroundColor(.white)
       HWTabs(model: model)
       Spacer()
     }

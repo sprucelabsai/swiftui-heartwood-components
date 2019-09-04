@@ -82,17 +82,6 @@ public struct HWListItem: View {
     return HWStyles.dynamicColor(color)
   }
   
-  private var selectableIcon: String {
-    guard let selectableType = model.selectableType else { return "" }
-    switch selectableType {
-    case .multiSelectable:
-      return HeartwoodTokens.Icon.fillCheckBoxOutlineBlank //  HeartwoodTokens.Icon.fillCheckBox
-    case .singleSelectable:
-      return HeartwoodTokens.Icon.fillRadioButtonUnchecked
-    }
-    
-  }
-  
   public var model: Model
   public init(model: Model){
     self.model = model
