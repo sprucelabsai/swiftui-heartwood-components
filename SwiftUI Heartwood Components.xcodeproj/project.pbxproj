@@ -22,6 +22,7 @@
 		DF37EAE6230E13D700840836 /* HWAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF37EAE5230E13D700840836 /* HWAvatar.swift */; };
 		DF37EAE8230E14B900840836 /* HWOnlineStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF37EAE7230E14B900840836 /* HWOnlineStatus.swift */; };
 		DF5E90E42320351B005A88CA /* HWSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5E90E32320351B005A88CA /* HWSearchBar.swift */; };
+		DF5E90E623204B7B005A88CA /* TextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5E90E523204B7B005A88CA /* TextInputView.swift */; };
 		DF96466D230EFCB800CEE359 /* HWStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF96466C230EFCB800CEE359 /* HWStyles.swift */; };
 		DFA2001D2316D75800DED85F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2001C2316D75800DED85F /* HomeView.swift */; };
 		DFA2001F2316E17400DED85F /* HWToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2001E2316E17400DED85F /* HWToast.swift */; };
@@ -62,6 +63,7 @@
 		DF37EAE5230E13D700840836 /* HWAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWAvatar.swift; sourceTree = "<group>"; };
 		DF37EAE7230E14B900840836 /* HWOnlineStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWOnlineStatus.swift; sourceTree = "<group>"; };
 		DF5E90E32320351B005A88CA /* HWSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWSearchBar.swift; sourceTree = "<group>"; };
+		DF5E90E523204B7B005A88CA /* TextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputView.swift; sourceTree = "<group>"; };
 		DF96466C230EFCB800CEE359 /* HWStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWStyles.swift; sourceTree = "<group>"; };
 		DFA2001C2316D75800DED85F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DFA2001E2316E17400DED85F /* HWToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWToast.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				DFA2002B2317390900DED85F /* SelectableView.swift */,
 				DFA2002D231832C900DED85F /* ToastView.swift */,
 				DFD3A9C0231F07F900364DEF /* TabsView.swift */,
+				DF5E90E523204B7B005A88CA /* TextInputView.swift */,
 			);
 			path = AppViews;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				DF24EFCB230DB6E700219B7A /* ContentView.swift in Sources */,
 				DFA2001D2316D75800DED85F /* HomeView.swift in Sources */,
 				DFD3A9BD231EE30600364DEF /* HWTabs.swift in Sources */,
+				DF5E90E623204B7B005A88CA /* TextInputView.swift in Sources */,
 				DF96466D230EFCB800CEE359 /* HWStyles.swift in Sources */,
 				DF37EAE6230E13D700840836 /* HWAvatar.swift in Sources */,
 				DF5E90E42320351B005A88CA /* HWSearchBar.swift in Sources */,

@@ -56,44 +56,107 @@ public struct HWTextInput: View {
   @Binding internal var text: String
   
   // MARK: - PRIVATE PROPERTIES
-  private var labelFont: Font {
+  private let styles: Styles
+  
+  // MARK: - PUBLIC INIT
+  public init(model: Model, text: Binding<String>) {
+    self.model = model
+    self._text = text
+    styles = Styles(model: model)
+  }
+  
+  // MARK: - VIEW
+  public var body: some View {
+    VStack(alignment: .leading, spacing: 4) {
+      HStack {
+        Text(model.label ?? "")
+          .font(styles.labelFont)
+          .foregroundColor(styles.labelColor)
+        Spacer()
+        Text(model.postLabel ?? "")
+          .font(styles.labelFont)
+          .foregroundColor(styles.labelColor)
+      }
+      HStack(spacing: 0) {
+        if model.iconBefore != nil {
+          HWIcon(name: model.iconBefore!)
+            .padding(.leading, 8)
+            .foregroundColor(styles.iconColor)
+            .opacity(0.6)
+        }
+        TextField(model.placeholder ?? "", text: $text)
+          .disabled(model.isReadOnly)
+          .font(styles.textFont)
+          .padding(.horizontal, 8)
+          .padding(.vertical, model.isSmall ? 8 : 14)
+          .background(styles.backgroundColor)
+        if model.iconAfter != nil {
+          Button(action: model.iconAfterAction ?? {} ) {
+            HWIcon(name: model.iconAfter!)
+              .padding(8)
+          }
+          .accentColor(styles.iconColor)
+        }
+      }
+      .overlay(
+        RoundedRectangle(cornerRadius: 4)
+          .strokeBorder(styles.outlineColor, lineWidth: 1)
+      )
+      if model.errorMsg != nil || model.helper != nil {
+        Text(model.errorMsg ?? model.helper!)
+          .font(styles.helperFont)
+          .foregroundColor(styles.helperColor)
+      }
+    }
+  }
+}
+
+private struct Styles {
+  
+  // MARK: - INTERNAL PROPERTIES
+  internal var model: HWTextInput.Model
+  
+  internal var labelFont: Font {
     let name = HeartwoodTokens.Font.mono.name
     let size = HeartwoodTokens.Font.Size.font1
     return HWStyles.dynamicFont(name: name, size: size)
   }
   
-  private var labelColor: Color {
+  internal var labelColor: Color {
     let color = HeartwoodTokens.Color.textColorBase
     return HWStyles.dynamicColor(color)
   }
   
-  private var textFont: Font {
+  internal var textFont: Font {
     let name =  HeartwoodTokens.Font.regular.name
     let size = HeartwoodTokens.Font.Size.font3
     return HWStyles.dynamicFont(name: name, size: size)
   }
   
-  private var helperFont: Font {
+  internal var helperFont: Font {
     let name =  HeartwoodTokens.Font.regular.name
     let size = HeartwoodTokens.Font.Size.font2
     return HWStyles.dynamicFont(name: name, size: size)
   }
   
-  private var helperColor: Color {
+  internal var helperColor: Color {
     let color = model.errorMsg == nil
       ? HeartwoodTokens.Color.textColorSubdued
       : HeartwoodTokens.Color.colorCriticalBase
     return HWStyles.dynamicColor(color)
   }
   
-  private var outlineColor: Color {
+  internal var outlineColor: Color {
     let color = model.errorMsg == nil
       ? HeartwoodTokens.Color.borderColorBold
       : HeartwoodTokens.Color.colorCriticalBase
     return HWStyles.dynamicColor(color)
   }
   
-  private var backgroundColor: Color {
+  internal var backgroundColor: Color {
+    guard !model.isReadOnly else {
+      return HWStyles.dynamicColor(HeartwoodTokens.Color.backgroundColorDark)
+    }
     let isError = model.errorMsg != nil
     let color = isError
       ? HeartwoodTokens.Color.colorCriticalBase
@@ -102,64 +165,14 @@ public struct HWTextInput: View {
     return HWStyles.dynamicColor(color).opacity(opacity)
   }
   
-  private var neutralColor: Color {
+  internal var neutralColor: Color {
     let color = HeartwoodTokens.Color.colorNeutral
     return HWStyles.dynamicColor(color)
   }
   
-  private var iconColor: Color {
+  internal var iconColor: Color {
     let color = HeartwoodTokens.Color.textColorBase
     return HWStyles.dynamicColor(color)
-  }
-  
-  // MARK: - PUBLIC INIT
-  public init(model: Model, text: Binding<String>) {
-    self.model = model
-    self._text = text
-  }
-  
-  // MARK: - VIEW
-  public var body: some View {
-    VStack(alignment: .leading, spacing: 4) {
-      HStack {
-        Text(model.label ?? "")
-          .font(labelFont)
-          .foregroundColor(labelColor)
-        Spacer()
-        Text(model.postLabel ?? "")
-          .font(labelFont)
-          .foregroundColor(labelColor)
-      }
-      HStack(spacing: 0) {
-        if model.iconBefore != nil {
-          HWIcon(name: model.iconBefore!)
-            .frame(width: 20, height: 20, alignment: .center).padding(.leading, 8)
-            .foregroundColor(iconColor)
-            .opacity(0.6)
-        }
-        TextField(model.placeholder ?? "", text: $text) // Not `$text` because of public init
-          .disabled(model.isReadOnly)
-          .font(textFont)
-          .padding(.horizontal, 8)
-          .padding(.vertical, model.isSmall ? 8 : 14)
-          .background(backgroundColor)
-        if model.iconAfter != nil {
-          Button(action: model.iconAfterAction ?? {} ) {
-            HWIcon(name: model.iconAfter!)
-              .frame(width: 20, height: 20, alignment: .center)
-              .padding(8)
-          }
-          .accentColor(iconColor)
-        }
-      }
-      .overlay(
-        RoundedRectangle(cornerRadius: 4)
-          .strokeBorder(outlineColor, lineWidth: 1)
-      )
-      if model.errorMsg != nil || model.helper != nil {
-        Text(model.errorMsg ?? model.helper!).font(helperFont).foregroundColor(helperColor)
-      }
-    }
   }
 }
 
