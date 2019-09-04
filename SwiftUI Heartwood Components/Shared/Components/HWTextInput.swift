@@ -67,7 +67,7 @@ public struct HWTextInput: View {
   
   // MARK: - VIEW
   public var body: some View {
-    VStack(alignment: .leading, spacing: 4) {
+    VStack(alignment: .leading, spacing: styles.vStackSpacing) {
       HStack {
         Text(model.label ?? "")
           .font(styles.labelFont)
@@ -80,27 +80,27 @@ public struct HWTextInput: View {
       HStack(spacing: 0) {
         if model.iconBefore != nil {
           HWIcon(name: model.iconBefore!)
-            .padding(.leading, 8)
+            .padding(.leading, styles.defaultPadding)
             .foregroundColor(styles.iconColor)
-            .opacity(0.6)
+            .opacity(styles.iconOpacity)
         }
         TextField(model.placeholder ?? "", text: $text)
           .disabled(model.isReadOnly)
           .font(styles.textFont)
-          .padding(.horizontal, 8)
-          .padding(.vertical, model.isSmall ? 8 : 14)
+          .padding(.horizontal, styles.defaultPadding)
+          .padding(.vertical, styles.textFieldPadding)
           .background(styles.backgroundColor)
         if model.iconAfter != nil {
           Button(action: model.iconAfterAction ?? {} ) {
             HWIcon(name: model.iconAfter!)
-              .padding(8)
+              .padding(styles.defaultPadding)
           }
           .accentColor(styles.iconColor)
         }
       }
       .overlay(
-        RoundedRectangle(cornerRadius: 4)
-          .strokeBorder(styles.outlineColor, lineWidth: 1)
+        RoundedRectangle(cornerRadius: styles.cornerRadius)
+          .strokeBorder(styles.outlineColor, lineWidth: styles.strokeWidth)
       )
       if model.errorMsg != nil || model.helper != nil {
         Text(model.errorMsg ?? model.helper!)
@@ -115,6 +115,13 @@ private struct Styles {
   
   // MARK: - INTERNAL PROPERTIES
   internal var model: HWTextInput.Model
+  
+  internal let vStackSpacing = CGFloat(4)
+  internal let defaultPadding = CGFloat(8)
+  internal let iconOpacity = 0.6
+  internal let cornerRadius = CGFloat(4)
+  internal let strokeWidth = CGFloat(1)
+  internal var textFieldPadding: CGFloat { return model.isSmall ? 8 : 14 }
   
   internal var labelFont: Font {
     let name = HeartwoodTokens.Font.mono.name
