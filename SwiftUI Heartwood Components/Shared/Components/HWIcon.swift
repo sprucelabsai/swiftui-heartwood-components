@@ -28,6 +28,8 @@ public struct HWIcon: View {
   
   public var body: some View {
     Image(name, bundle: HeartwoodTokens.bundle)
+      .resizable()
+      .frame(width: 20, height: 20, alignment: .center)
       .accessibility(label: accessibilityLabel)
       .imageScale(.small)
   }

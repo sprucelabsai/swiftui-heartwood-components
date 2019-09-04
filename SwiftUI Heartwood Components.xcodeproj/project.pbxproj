@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1569D9A0E86488567D6F5C3F /* Pods_SwiftUI_Heartwood_ComponentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DF0BAE3CF72BF6F55F138B /* Pods_SwiftUI_Heartwood_ComponentsTests.framework */; };
 		93747E2A64A9E42F7E856CE6 /* Pods_SwiftUI_Heartwood_Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B08F6E435D455CACC7C55A2 /* Pods_SwiftUI_Heartwood_Components.framework */; };
-		C6AB474B62A2987812ADAE8B /* Pods_SwiftUI_Heartwood_ComponentsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0B75339AE0F0CD55403E69 /* Pods_SwiftUI_Heartwood_ComponentsUITests.framework */; };
 		DF1961A82315B94700B88719 /* HWSelectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1961A72315B94700B88719 /* HWSelectButton.swift */; };
 		DF24EFC7230DB6E700219B7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF24EFC6230DB6E700219B7A /* AppDelegate.swift */; };
 		DF24EFC9230DB6E700219B7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF24EFC8230DB6E700219B7A /* SceneDelegate.swift */; };
@@ -17,14 +15,14 @@
 		DF24EFCD230DB6EA00219B7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF24EFCC230DB6EA00219B7A /* Assets.xcassets */; };
 		DF24EFD0230DB6EA00219B7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF24EFCF230DB6EA00219B7A /* Preview Assets.xcassets */; };
 		DF24EFD3230DB6EA00219B7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF24EFD1230DB6EA00219B7A /* LaunchScreen.storyboard */; };
-		DF24EFDE230DB6EA00219B7A /* SwiftUI_Heartwood_ComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF24EFDD230DB6EA00219B7A /* SwiftUI_Heartwood_ComponentsTests.swift */; };
-		DF24EFE9230DB6EA00219B7A /* SwiftUI_Heartwood_ComponentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF24EFE8230DB6EA00219B7A /* SwiftUI_Heartwood_ComponentsUITests.swift */; };
 		DF24EFF8230DCFAA00219B7A /* HWListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF24EFF7230DCFAA00219B7A /* HWListItem.swift */; };
 		DF24EFFB230DD0BB00219B7A /* HWAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF24EFFA230DD0BB00219B7A /* HWAction.swift */; };
 		DF24EFFD230DD13200219B7A /* HWSelectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF24EFFC230DD13200219B7A /* HWSelectable.swift */; };
 		DF37EAE4230E02D800840836 /* HWIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF37EAE3230E02D800840836 /* HWIcon.swift */; };
 		DF37EAE6230E13D700840836 /* HWAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF37EAE5230E13D700840836 /* HWAvatar.swift */; };
 		DF37EAE8230E14B900840836 /* HWOnlineStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF37EAE7230E14B900840836 /* HWOnlineStatus.swift */; };
+		DF5E90E42320351B005A88CA /* HWSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5E90E32320351B005A88CA /* HWSearchBar.swift */; };
+		DF5E90E623204B7B005A88CA /* TextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5E90E523204B7B005A88CA /* TextInputView.swift */; };
 		DF96466D230EFCB800CEE359 /* HWStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF96466C230EFCB800CEE359 /* HWStyles.swift */; };
 		DFA2001D2316D75800DED85F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2001C2316D75800DED85F /* HomeView.swift */; };
 		DFA2001F2316E17400DED85F /* HWToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2001E2316E17400DED85F /* HWToast.swift */; };
@@ -35,24 +33,10 @@
 		DFA2002A231737BF00DED85F /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA20029231737BF00DED85F /* ListItemView.swift */; };
 		DFA2002C2317390900DED85F /* SelectableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2002B2317390900DED85F /* SelectableView.swift */; };
 		DFA2002E231832C900DED85F /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2002D231832C900DED85F /* ToastView.swift */; };
+		DFD3A9BD231EE30600364DEF /* HWTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD3A9BC231EE30600364DEF /* HWTabs.swift */; };
+		DFD3A9C1231F07F900364DEF /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD3A9C0231F07F900364DEF /* TabsView.swift */; };
+		DFD3A9C3231F0C6E00364DEF /* HWTextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD3A9C2231F0C6E00364DEF /* HWTextInput.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		DF24EFDA230DB6EA00219B7A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DF24EFBB230DB6E700219B7A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DF24EFC2230DB6E700219B7A;
-			remoteInfo = "SwiftUI Heartwood Components";
-		};
-		DF24EFE5230DB6EA00219B7A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DF24EFBB230DB6E700219B7A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DF24EFC2230DB6E700219B7A;
-			remoteInfo = "SwiftUI Heartwood Components";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0AD109DB6F15C673F01DF47D /* Pods-SwiftUI Heartwood Components.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI Heartwood Components.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI Heartwood Components/Pods-SwiftUI Heartwood Components.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,18 +56,14 @@
 		DF24EFCF230DB6EA00219B7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF24EFD2230DB6EA00219B7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF24EFD4230DB6EA00219B7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF24EFD9230DB6EA00219B7A /* SwiftUI Heartwood ComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI Heartwood ComponentsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF24EFDD230DB6EA00219B7A /* SwiftUI_Heartwood_ComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Heartwood_ComponentsTests.swift; sourceTree = "<group>"; };
-		DF24EFDF230DB6EA00219B7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF24EFE4230DB6EA00219B7A /* SwiftUI Heartwood ComponentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI Heartwood ComponentsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF24EFE8230DB6EA00219B7A /* SwiftUI_Heartwood_ComponentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Heartwood_ComponentsUITests.swift; sourceTree = "<group>"; };
-		DF24EFEA230DB6EA00219B7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF24EFF7230DCFAA00219B7A /* HWListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWListItem.swift; sourceTree = "<group>"; };
 		DF24EFFA230DD0BB00219B7A /* HWAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWAction.swift; sourceTree = "<group>"; };
 		DF24EFFC230DD13200219B7A /* HWSelectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWSelectable.swift; sourceTree = "<group>"; };
 		DF37EAE3230E02D800840836 /* HWIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWIcon.swift; sourceTree = "<group>"; };
 		DF37EAE5230E13D700840836 /* HWAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWAvatar.swift; sourceTree = "<group>"; };
 		DF37EAE7230E14B900840836 /* HWOnlineStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWOnlineStatus.swift; sourceTree = "<group>"; };
+		DF5E90E32320351B005A88CA /* HWSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWSearchBar.swift; sourceTree = "<group>"; };
+		DF5E90E523204B7B005A88CA /* TextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputView.swift; sourceTree = "<group>"; };
 		DF96466C230EFCB800CEE359 /* HWStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWStyles.swift; sourceTree = "<group>"; };
 		DFA2001C2316D75800DED85F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DFA2001E2316E17400DED85F /* HWToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWToast.swift; sourceTree = "<group>"; };
@@ -94,6 +74,9 @@
 		DFA20029231737BF00DED85F /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		DFA2002B2317390900DED85F /* SelectableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableView.swift; sourceTree = "<group>"; };
 		DFA2002D231832C900DED85F /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		DFD3A9BC231EE30600364DEF /* HWTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWTabs.swift; sourceTree = "<group>"; };
+		DFD3A9C0231F07F900364DEF /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
+		DFD3A9C2231F0C6E00364DEF /* HWTextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWTextInput.swift; sourceTree = "<group>"; };
 		E4D8EB05F43DD4D5D3C2D52F /* Pods-SwiftUI Heartwood ComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI Heartwood ComponentsTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI Heartwood ComponentsTests/Pods-SwiftUI Heartwood ComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,22 +86,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				93747E2A64A9E42F7E856CE6 /* Pods_SwiftUI_Heartwood_Components.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DF24EFD6230DB6EA00219B7A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1569D9A0E86488567D6F5C3F /* Pods_SwiftUI_Heartwood_ComponentsTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DF24EFE1230DB6EA00219B7A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C6AB474B62A2987812ADAE8B /* Pods_SwiftUI_Heartwood_ComponentsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,8 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				DF24EFC5230DB6E700219B7A /* SwiftUI Heartwood Components */,
-				DF24EFDC230DB6EA00219B7A /* SwiftUI Heartwood ComponentsTests */,
-				DF24EFE7230DB6EA00219B7A /* SwiftUI Heartwood ComponentsUITests */,
 				DF24EFC4230DB6E700219B7A /* Products */,
 				90309BC94B2A12ED7BB44727 /* Pods */,
 				C81A43D5E248EAFA083F2BF2 /* Frameworks */,
@@ -164,8 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				DF24EFC3230DB6E700219B7A /* Heartwood Components.app */,
-				DF24EFD9230DB6EA00219B7A /* SwiftUI Heartwood ComponentsTests.xctest */,
-				DF24EFE4230DB6EA00219B7A /* SwiftUI Heartwood ComponentsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,34 +158,19 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		DF24EFDC230DB6EA00219B7A /* SwiftUI Heartwood ComponentsTests */ = {
-			isa = PBXGroup;
-			children = (
-				DF24EFDD230DB6EA00219B7A /* SwiftUI_Heartwood_ComponentsTests.swift */,
-				DF24EFDF230DB6EA00219B7A /* Info.plist */,
-			);
-			path = "SwiftUI Heartwood ComponentsTests";
-			sourceTree = "<group>";
-		};
-		DF24EFE7230DB6EA00219B7A /* SwiftUI Heartwood ComponentsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DF24EFE8230DB6EA00219B7A /* SwiftUI_Heartwood_ComponentsUITests.swift */,
-				DF24EFEA230DB6EA00219B7A /* Info.plist */,
-			);
-			path = "SwiftUI Heartwood ComponentsUITests";
-			sourceTree = "<group>";
-		};
 		DF24EFF6230DB76100219B7A /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				DF37EAE5230E13D700840836 /* HWAvatar.swift */,
 				DF24EFF7230DCFAA00219B7A /* HWListItem.swift */,
 				DF37EAE3230E02D800840836 /* HWIcon.swift */,
+				DF5E90E32320351B005A88CA /* HWSearchBar.swift */,
 				DF1961A72315B94700B88719 /* HWSelectButton.swift */,
 				DFA2001E2316E17400DED85F /* HWToast.swift */,
 				DFA200202316E1C200DED85F /* HWButton.swift */,
 				DFA200222316F4E200DED85F /* HWLoader.swift */,
+				DFD3A9BC231EE30600364DEF /* HWTabs.swift */,
+				DFD3A9C2231F0C6E00364DEF /* HWTextInput.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -263,6 +211,8 @@
 				DFA20029231737BF00DED85F /* ListItemView.swift */,
 				DFA2002B2317390900DED85F /* SelectableView.swift */,
 				DFA2002D231832C900DED85F /* ToastView.swift */,
+				DFD3A9C0231F07F900364DEF /* TabsView.swift */,
+				DF5E90E523204B7B005A88CA /* TextInputView.swift */,
 			);
 			path = AppViews;
 			sourceTree = "<group>";
@@ -289,44 +239,6 @@
 			productReference = DF24EFC3230DB6E700219B7A /* Heartwood Components.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DF24EFD8230DB6EA00219B7A /* SwiftUI Heartwood ComponentsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DF24EFF0230DB6EA00219B7A /* Build configuration list for PBXNativeTarget "SwiftUI Heartwood ComponentsTests" */;
-			buildPhases = (
-				6C91BFEBE3E27F1A7A87D8F5 /* [CP] Check Pods Manifest.lock */,
-				DF24EFD5230DB6EA00219B7A /* Sources */,
-				DF24EFD6230DB6EA00219B7A /* Frameworks */,
-				DF24EFD7230DB6EA00219B7A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DF24EFDB230DB6EA00219B7A /* PBXTargetDependency */,
-			);
-			name = "SwiftUI Heartwood ComponentsTests";
-			productName = "SwiftUI Heartwood ComponentsTests";
-			productReference = DF24EFD9230DB6EA00219B7A /* SwiftUI Heartwood ComponentsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		DF24EFE3230DB6EA00219B7A /* SwiftUI Heartwood ComponentsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DF24EFF3230DB6EA00219B7A /* Build configuration list for PBXNativeTarget "SwiftUI Heartwood ComponentsUITests" */;
-			buildPhases = (
-				B874DC19F2D198F8F2714654 /* [CP] Check Pods Manifest.lock */,
-				DF24EFE0230DB6EA00219B7A /* Sources */,
-				DF24EFE1230DB6EA00219B7A /* Frameworks */,
-				DF24EFE2230DB6EA00219B7A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DF24EFE6230DB6EA00219B7A /* PBXTargetDependency */,
-			);
-			name = "SwiftUI Heartwood ComponentsUITests";
-			productName = "SwiftUI Heartwood ComponentsUITests";
-			productReference = DF24EFE4230DB6EA00219B7A /* SwiftUI Heartwood ComponentsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -339,14 +251,6 @@
 				TargetAttributes = {
 					DF24EFC2230DB6E700219B7A = {
 						CreatedOnToolsVersion = 11.0;
-					};
-					DF24EFD8230DB6EA00219B7A = {
-						CreatedOnToolsVersion = 11.0;
-						TestTargetID = DF24EFC2230DB6E700219B7A;
-					};
-					DF24EFE3230DB6EA00219B7A = {
-						CreatedOnToolsVersion = 11.0;
-						TestTargetID = DF24EFC2230DB6E700219B7A;
 					};
 				};
 			};
@@ -364,8 +268,6 @@
 			projectRoot = "";
 			targets = (
 				DF24EFC2230DB6E700219B7A /* SwiftUI Heartwood Components */,
-				DF24EFD8230DB6EA00219B7A /* SwiftUI Heartwood ComponentsTests */,
-				DF24EFE3230DB6EA00219B7A /* SwiftUI Heartwood ComponentsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -381,45 +283,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF24EFD7230DB6EA00219B7A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DF24EFE2230DB6EA00219B7A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6C91BFEBE3E27F1A7A87D8F5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SwiftUI Heartwood ComponentsTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		794BF6C8355679EDF6A2268D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -459,28 +325,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B874DC19F2D198F8F2714654 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SwiftUI Heartwood ComponentsUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -492,7 +336,9 @@
 				DF24EFC7230DB6E700219B7A /* AppDelegate.swift in Sources */,
 				DFA2002C2317390900DED85F /* SelectableView.swift in Sources */,
 				DF24EFF8230DCFAA00219B7A /* HWListItem.swift in Sources */,
+				DFD3A9C1231F07F900364DEF /* TabsView.swift in Sources */,
 				DFA2002E231832C900DED85F /* ToastView.swift in Sources */,
+				DFD3A9C3231F0C6E00364DEF /* HWTextInput.swift in Sources */,
 				DF24EFFB230DD0BB00219B7A /* HWAction.swift in Sources */,
 				DFA2002823172F6800DED85F /* ButtonView.swift in Sources */,
 				DF24EFC9230DB6E700219B7A /* SceneDelegate.swift in Sources */,
@@ -505,42 +351,16 @@
 				DFA200232316F4E200DED85F /* HWLoader.swift in Sources */,
 				DF24EFCB230DB6E700219B7A /* ContentView.swift in Sources */,
 				DFA2001D2316D75800DED85F /* HomeView.swift in Sources */,
+				DFD3A9BD231EE30600364DEF /* HWTabs.swift in Sources */,
+				DF5E90E623204B7B005A88CA /* TextInputView.swift in Sources */,
 				DF96466D230EFCB800CEE359 /* HWStyles.swift in Sources */,
 				DF37EAE6230E13D700840836 /* HWAvatar.swift in Sources */,
+				DF5E90E42320351B005A88CA /* HWSearchBar.swift in Sources */,
 				DFA2001F2316E17400DED85F /* HWToast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF24EFD5230DB6EA00219B7A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DF24EFDE230DB6EA00219B7A /* SwiftUI_Heartwood_ComponentsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DF24EFE0230DB6EA00219B7A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DF24EFE9230DB6EA00219B7A /* SwiftUI_Heartwood_ComponentsUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		DF24EFDB230DB6EA00219B7A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DF24EFC2230DB6E700219B7A /* SwiftUI Heartwood Components */;
-			targetProxy = DF24EFDA230DB6EA00219B7A /* PBXContainerItemProxy */;
-		};
-		DF24EFE6230DB6EA00219B7A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DF24EFC2230DB6E700219B7A /* SwiftUI Heartwood Components */;
-			targetProxy = DF24EFE5230DB6EA00219B7A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DF24EFD1230DB6EA00219B7A /* LaunchScreen.storyboard */ = {
@@ -710,94 +530,6 @@
 			};
 			name = Release;
 		};
-		DF24EFF1230DB6EA00219B7A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF1E3D8F79DF074446031926 /* Pods-SwiftUI Heartwood ComponentsTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6ZQM8PGLWP;
-				INFOPLIST_FILE = "SwiftUI Heartwood ComponentsTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ai.spruce.SwiftUI-Heartwood-ComponentsTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI Heartwood Components.app/SwiftUI Heartwood Components";
-			};
-			name = Debug;
-		};
-		DF24EFF2230DB6EA00219B7A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4D8EB05F43DD4D5D3C2D52F /* Pods-SwiftUI Heartwood ComponentsTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6ZQM8PGLWP;
-				INFOPLIST_FILE = "SwiftUI Heartwood ComponentsTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ai.spruce.SwiftUI-Heartwood-ComponentsTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI Heartwood Components.app/SwiftUI Heartwood Components";
-			};
-			name = Release;
-		};
-		DF24EFF4230DB6EA00219B7A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A66FFD833875AB9A3CC3A0EA /* Pods-SwiftUI Heartwood ComponentsUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6ZQM8PGLWP;
-				INFOPLIST_FILE = "SwiftUI Heartwood ComponentsUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ai.spruce.SwiftUI-Heartwood-ComponentsUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "SwiftUI Heartwood Components";
-			};
-			name = Debug;
-		};
-		DF24EFF5230DB6EA00219B7A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F0DC817FBE9B03788FED090 /* Pods-SwiftUI Heartwood ComponentsUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6ZQM8PGLWP;
-				INFOPLIST_FILE = "SwiftUI Heartwood ComponentsUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ai.spruce.SwiftUI-Heartwood-ComponentsUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "SwiftUI Heartwood Components";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -815,24 +547,6 @@
 			buildConfigurations = (
 				DF24EFEE230DB6EA00219B7A /* Debug */,
 				DF24EFEF230DB6EA00219B7A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DF24EFF0230DB6EA00219B7A /* Build configuration list for PBXNativeTarget "SwiftUI Heartwood ComponentsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DF24EFF1230DB6EA00219B7A /* Debug */,
-				DF24EFF2230DB6EA00219B7A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DF24EFF3230DB6EA00219B7A /* Build configuration list for PBXNativeTarget "SwiftUI Heartwood ComponentsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DF24EFF4230DB6EA00219B7A /* Debug */,
-				DF24EFF5230DB6EA00219B7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

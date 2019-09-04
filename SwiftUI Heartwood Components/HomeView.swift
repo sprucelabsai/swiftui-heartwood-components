@@ -46,6 +46,18 @@ struct HomeView: View {
       subtitle: "HWToast",
       canPushView: true
     ),
+    HWListItem.Model(
+      id: "tabs",
+      title: "Tabs",
+      subtitle: "HWTabs",
+      canPushView: true
+    ),
+    HWListItem.Model(
+      id: "input",
+      title: "Text Input",
+      subtitle: "HWTextInput and HWSearchBar",
+      canPushView: true
+    ),
   ]
 
   var body: some View {
@@ -70,6 +82,14 @@ struct HomeView: View {
             })
           } else if item.id == "toast" {
              NavigationLink(destination: ToastView(), label: {
+               EmptyView()
+             })
+           } else if item.id == "tabs" {
+             NavigationLink(destination: TabsView(), label: {
+               EmptyView()
+             })
+           } else if item.id == "input" {
+             NavigationLink(destination: TextInputView(), label: {
                EmptyView()
              })
            }

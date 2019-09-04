@@ -20,6 +20,9 @@ public enum HWStyles {
   // ListItem
   static let horizonatlSpacing: CGFloat = 8
   
+  // Tabs
+  static let tabsSpacing: CGFloat = 16
+  
   public static func dynamicFont(name: String, size: Int) -> Font {
     let textStyle = dynamicTextStyle(for: size)
     let font = UIFont(name: name, size: CGFloat(size)) ?? UIFont()
